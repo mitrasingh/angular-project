@@ -12,4 +12,10 @@ export class MyFirstCompComponent {
   name: string = '';
   email: string = '';
   message: string = '';
+  isSubmitted: boolean = false;
+
+  onSubmit(): void {
+    console.log(this.name);
+    this.isSubmitted = true;
+  }
 }
