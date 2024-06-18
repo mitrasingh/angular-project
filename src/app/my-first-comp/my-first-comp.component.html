@@ -38,11 +38,14 @@
       </tr>
     </thead>
     <tbody>
+      @for (msg of messages; track msg; let index = $index) {
       <tr>
-        <td>aaaaa</td>
-        <td>aaaaa</td>
-        <td>aaaaa</td>
+        <td>{{ index + 1 }}</td>
+        <td>{{ msg.name }}</td>
+        <td>{{ msg.email }}</td>
+        <td>{{ msg.message }}</td>
       </tr>
+      }
     </tbody>
   </table>
   }
