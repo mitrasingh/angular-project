@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-message-details',
   standalone: true,
   imports: [],
   templateUrl: './message-details.component.html',
-  styleUrl: './message-details.component.css'
+  styleUrl: './message-details.component.css',
 })
 export class MessageDetailsComponent {
-
+  @Input()
+  message: any = {};
 }
