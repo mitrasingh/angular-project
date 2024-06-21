@@ -50,7 +50,11 @@
   </table>
   } -->
 
+  @if (isSubmitted) {
   <div class="flex-container">
-    <app-message-details></app-message-details>
+    @for (msg of messages; track msg; let index = $index) {
+    <app-message-details [message]="msg"></app-message-details>
+    }
   </div>
+  }
 </div>
