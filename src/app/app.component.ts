@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { MyFirstCompComponent } from './my-first-comp/my-first-comp.component';
 import { MyFirstService } from './services/my-first.service';
 import { MenuComponent } from './menu/menu.component';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MyFirstCompComponent, MenuComponent],
+  imports: [RouterOutlet, MyFirstCompComponent, MenuComponent, AboutComponent],
   providers: [MyFirstService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
