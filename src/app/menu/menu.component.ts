@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css',
 })
